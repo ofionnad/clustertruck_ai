@@ -1,0 +1,15 @@
+
+1. Made new conda environment
+conda create --name torch
+
+2. Install the anaconda cudatoolkit
+conda install -c anaconda cudatoolkit
+
+3. Install pytorch with cudatoolkit=11.0 from pytorch channel
+conda install pytorch torchvision torchaudio cudatoolkit=11.0 -c pytorch
+
+4. Use pip to install opencv as conda version clashes with pytorch
+pip install opencv-contrib-python
+
+5. Use pip to install the fastai v2 (conda kept installing older versions)
+pip install fastai
